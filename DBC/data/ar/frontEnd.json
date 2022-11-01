@@ -1,0 +1,23 @@
+{
+    "specialty":"محمد ",
+    "definition":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum id minus molestias, nemo enim quia, impedit sequi ad delectus nesciunt eligendi ex mollitia quisquam ut vero assumenda qui maxime! Quibusdam.",
+    "steps":
+    [
+        {
+            "title":"HTML & CSS",
+            "description":"يمكنك البدا بها بللالبلالبربيرررررررررررررررررررررررر",
+            "recources":[
+                "https://www.google.com",
+                "https://www.facebook.com"
+            ]
+        },
+        {
+            "title":"Java Script",
+            "description":"محمد زين",
+            "recources":[
+                "https://www.twitter.com"
+            ]
+        }
+    ]
+
+}

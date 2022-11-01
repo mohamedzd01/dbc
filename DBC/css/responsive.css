@@ -1,0 +1,34 @@
+@media (max-width :768px){
+    .container{
+        width:380px;
+        padding: 0 15px;
+ 
+    }
+    .sections .container{
+        width:100%;
+    }
+    body[dir="ltr"] .infos .container .road-map .steps::before{
+        left:10px;
+        transform: translateX(0);
+    }
+    body[dir="rtl"] .infos .container .road-map .steps::before{
+        left:calc(97% - 10px);
+        transform: translateX(0);
+    }
+    body[dir="ltr"] .infos .container .road-map .right,body[dir="ltr"] .infos .container .road-map .left{
+        float: left;
+        margin-left: 40px;
+        width: 98%;
+    }
+    body[dir="rtl"] .infos .container .road-map .right,body[dir="rtl"] .infos .container .road-map .left{
+        float: right;
+        margin-right:40px;
+         width: 98%;
+    }
+    body[dir="rtl"] .infos .container .road-map .right::before,body[dir="rtl"] .infos .container .road-map .left::before{
+        right:-29px;
+    }
+    body[dir="ltr"] .infos .container .road-map .right::before,body[dir="ltr"] .infos .container .road-map .left::before{
+        left:-35px;
+    }
+}

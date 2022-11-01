@@ -1,0 +1,20 @@
+body[mode="dark"],
+body[mode="light"]{
+    --main-color:#3568D4;
+    --btn-color:#EBEBF0;
+
+}
+
+
+body[mode="light"]{
+    --text-color: #28293D;
+    --bg-color : #F2F2F5;
+    --surface-color:#EBEBF0;
+
+}
+body[mode="dark"]{
+    --main-color:#004FC4;
+    --text-color: #EBEBF0;
+    --bg-color : #060719;
+    --surface-color:#222440;
+}

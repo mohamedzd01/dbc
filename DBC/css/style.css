@@ -1,0 +1,183 @@
+*{
+    padding : 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Cairo';
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.container{
+    width: 850px;
+    margin: 0 auto;
+}
+header{
+    background-color: var(--surface-color);
+    height: 85px;
+    display: flex;
+    align-items: center;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+header h2{
+    color:var(--main-color);
+}
+header .options{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+header .options > div{
+    width: 35px;
+    height:35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--btn-color);
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+header .options > div:hover{
+    opacity: .85;
+}
+
+
+.sections{
+    height: calc(100vh - 85px);
+
+    align-items: center;
+    justify-content: center;
+    display: none;
+    
+}
+.sections.active{
+    display: flex;
+}
+.sections .container{
+    background-color: var(--surface-color);
+    padding: 20px;
+    width: 40%;
+    border-radius: 12px;
+}
+.sections .container div{
+  
+    background-color: var(--bg-color);
+    padding: 10px 7px;
+    margin: 15px 0;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.sections .container .btn{
+    background-color: var(--main-color);
+    color:white;
+    font-weight: 600;
+    margin-top: 30px;
+    
+}
+.sections .container .section.active{
+    background-color: #3567d460 ;
+    color: white;
+}
+
+
+.infos{
+    padding: 25px 0;
+    display: none;
+}
+.infos.active{
+    padding: 25px 0;
+    display: block;
+}
+.infos .container> h3{
+    font-size: 35px;
+}
+.infos .container .title{
+    color:var(--main-color)
+}
+.infos .container .road-map{
+    margin-top: 25px;
+    position:relative;
+    overflow: hidden;
+    padding: 15px 0 ;
+}
+
+.infos .container .road-map > h3{
+    font-size: 26px;
+    
+}
+.infos .container .road-map .steps{
+    position:relative;
+    margin-top:15px ;
+    overflow: hidden;
+}
+
+.infos .container .road-map .steps::before{
+    content:'' ;
+    height: 100%;
+    width: 4px;
+    background-color: var(--main-color);
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    border-radius: 25px;
+}
+.infos .container .road-map .right,.infos .container .road-map .left{
+    width: calc(50% - 30px);
+    position: relative;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.infos .container .road-map .right::before,.infos .container .road-map .left::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border:3px solid var(--main-color);
+    top: 20px;
+    background-color: var(--bg-color);
+}
+.infos .container .road-map .right::before{
+    left:-38px;
+}
+.infos .container .road-map .left::before{
+    right:-38px;
+}
+.infos .container .road-map .left{
+   
+    float: left;
+    
+}
+
+.clear{
+    clear: both;
+}
+.infos .container .road-map .right{
+
+    float: right;
+}
+
+.infos .btn{
+    
+    padding: 7px 25px ;
+    color: white;
+    background-color: var(--main-color);
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
